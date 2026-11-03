@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body{width:340px;font-family:system-ui,sans-serif;margin:12px;color:#222}
+h2{font-size:16px;margin:0 0 10px}
+.row{margin:8px 0}
+label{display:block;font-size:12px;margin-bottom:4px;color:#555}
+input{width:100%;padding:6px;box-sizing:border-box;border:1px solid #ccc;border-radius:4px}
+button{padding:6px 10px;margin-right:6px;cursor:pointer;border:none;border-radius:4px;background:#1e90ff;color:#fff}
+button.secondary{background:#eee;color:#222}
+.status{font-size:12px;margin-top:8px;padding:6px;border-radius:4px;background:#f5f5f5}
+.on{background:#e6ffed}
+.err{background:#ffe6e6}
+small{color:#777}
+</style>
+</head>
+<body>
+<h2>MCP Chrome Bridge</h2>
+<div class="row"><label>Host</label><input id="host" value="127.0.0.1"></div>
+<div class="row"><label>Port</label><input id="port" value="8765"></div>
+<div class="row"><label>Token (from server token file)</label><input id="token" type="password" placeholder="paste token"></div>
+<div class="row">
+  <button id="save">Save &amp; Connect</button>
+  <button id="disconnect" class="secondary">Disconnect</button>
+</div>
+<div id="status" class="status">...</div>
+<small>Token file: ~/.mcp-chrome/token (or MCP_CHROME_TOKEN env)</small>
+<script src="popup.js"></script>
+</body>
+</html>
