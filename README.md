@@ -3,6 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![MCP](https://img.shields.io/badge/MCP-chrome--bridge-blue)](#)
 
+**Languages:** 🇬🇧 English (this file) | 🇧🇷 [Português](README.pt.md)
+
 > Give your AI agent (Claude Code, Copilot CLI, Cursor, or any MCP client) **real browser access** through Chrome DevTools (CDP).  
 > Navigate, inspect the DOM, evaluate JavaScript, read **network requests & responses**, console, cookies, storage, and capture screenshots — all without a separate browser.
 
