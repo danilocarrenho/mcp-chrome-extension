@@ -12,7 +12,9 @@
     "cookies",
     "webRequest",
     "webNavigation",
-    "alarms"
+    "alarms",
+    "downloads",
+    "browsingData"
   ],
   "host_permissions": [
     "<all_urls>"

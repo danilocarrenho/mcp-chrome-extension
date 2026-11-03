@@ -3,8 +3,7 @@ async function load() {
   const cfg = await chrome.runtime.sendMessage({ type: 'getConfig' });
   $('host').value = cfg.serverHost || '127.0.0.1';
   $('port').value = cfg.serverPort || 8765;
-  $('token').value = cfg.token || '';
-  refresh();
+  $('token').value = cfg.token || '';  refresh();
 }
 async function refresh() {
   const s = await chrome.runtime.sendMessage({ type: 'status' });

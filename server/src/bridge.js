@@ -20,7 +20,7 @@ function ensureToken() {
 class Bridge extends EventEmitter {
   constructor() {
     super();
-    this.port = DEFAULT_PORT;
+    this.port = Number(process.env.MCP_CHROME_PORT || DEFAULT_PORT);
     this.token = process.env.MCP_CHROME_TOKEN || ensureToken();
     this.wss = null;
     this.socket = null;
